@@ -27,6 +27,7 @@ public class DBConfig {
                     " ISBN VARCHAR(255), " +
                     " PRIMARY KEY ( id ));";
 
+            stmt.executeUpdate("drop table if exists LIVRO");
             System.out.println(stmt.executeUpdate(sql));
             System.out.println("Criando tabela no banco de dados");
         } catch (SQLException e) {
